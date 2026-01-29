@@ -1,267 +1,1158 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Omwattie Motee Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omwattie Motee Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper"> 
+        :root {
+            --pastel-pink: #ffd6e0;
+            --pastel-blue: #c4e0f9;
+            --pastel-mint: #d4f5e9;
+            --pastel-lavender: #e8dff5;
+            --pastel-peach: #ffe5d9;
+            --pastel-yellow: #fff3cd;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 16px 48px rgba(0, 0, 0, 0.12);
+            /* Vibrant hero colors */
+            --hero-gradient-start: #667eea;
+            --hero-gradient-mid: #9f7aea;
+            --hero-gradient-end: #f093fb;
+        }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-		
-						<h1>Welcome To My Portfolio</h1>
-						<p>Data Analyst skilled in Excel,  SQL,  Python, &  Tableau.<br /> 
-					 <!-- <a href="https://www.linkedin.com/in/omwattiemotee/" target="_blank" class="linkedin">@omwattiemotee</a></p> -->
-					 <ul class="icons">
-						<li><a href="https://github.com/omwattiemotee" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-				
-						<li><a href="https://www.linkedin.com/in/omwattiemotee/" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-					</ul>
-					</header>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fef9f9;
+            min-height: 100vh;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#Intro" class="active">About Me</a></li> 
-							<li><a href="#first">Excel </a></li>
-							<li><a href="#second">SQL</a></li>
-							<li><a href="#third">Python</a></li>
-							<li><a href="#forth">Tableau</a></li>
-							<li><a href="#Info">Info.</a></li>
-							<!-- <li><a href="#cta">Get Started</a></li>   -->
-						</ul>
-					</nav>
+        /* Gradient that starts after the hero */
+        .page-content {
+            position: relative;
+            background: #fef9f9;
+            background: linear-gradient(180deg, 
+                #fef9f9 0px, 
+                #fef9f9 300px,
+                #fafaff 500px,
+                #f8fff8 900px, 
+                #fef8ff 1400px, 
+                #fffaf8 100%
+            );
+        }
 
-				<!-- Main -->
-					<div id="main">
+        /* Animated Background Orbs - only below hero */
+        .bg-orbs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
 
-						<!-- Introduction -->
-						
-							<section id="Intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About Me</h2>
-										</header>
-                                        <h3></h3>
-				                       <h5><span class="image"><img src="images/pic09.jpg " /></span> </h5>
-									</ul>
-								  </div> 
-								 
-						                    </header class ="major">
-											<h2></h2>
-											<p align="middle">My name is Omwattie Motee, and I'm a data analyst with a passion for making a meaningful impact through complex data analysis. 
-											After a background in Education, I made a career change in 2022 to pursue my love for working with data. I have successfully completed over 10 personal projects, 
-											gaining valuable insights and sharpening my technical skills in Excel, Sql, Python & Tableau.  
-											I strongly believe that data analysis can play a crucial role in improving processes, optimizing decision-making, and positively impacting organizations and communities. 
-											My ultimate goal is to leverage my skills and knowledge to contribute to meaningful projects and initiatives that make a difference.	 
-											I am open to collaboration and eager to connect with like-minded professionals who share a passion for data analysis and its transformative power. 
-											If you have any feedback, questions, or potential opportunities, I would be delighted to hear from you. Thank you for visiting!	</p> 
-											
-										
-									   <ul class="actions">
-									</header>
-									
-								<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
-										
-							<!-- <span class="image"><img src="images/pic09.jpg " /></span> -->
-								</div>
-							</section>
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            animation: float 20s ease-in-out infinite;
+        }
 
-						<!-- Projects -->
-						<!--Excel-->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Excel Project</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Data Cleaning</h3>
-										<p> Dataset was put into table format. Duplicates were removed, Auto-fix-cols, fixed date format to text-to-cols. 
-										Blanks cell were referenced & filled. Trim, Right & Mid function were used to remove extra spaces and characters. 
-									    
-									</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Explorate and Analyze</h3>
-										<p>Using SUMIFS, Xlookup, Vlookup, and Index Match for reablity and comprehension of dataset. 
-											Date table was created to see vol per quarters. 
-											Lastly, Pivot tables were created to cal. YoY variance and % differences.    </p>
-									
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Key Findings</h3>
-										<p>Q2 YoY growth slowed from Q1 growth of 4% down to 2.7%, in vol.
-										  Loss of two customers in LATAM, driven growth from 9% Q1-Q2 YoY.
-										  NAM client onboarding in Q2 20 - Q2 21, slowing perceived growth and amplifying Q1 growth by 1%.  
-											  </p>
-									
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-									 <li><a href="https://onedrive.live.com/embed?resid=5010E19F79FF1A4E%211153&authkey=%21AN76EL49NYkZFLM&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&resen=true&ed1JS=false&width=1050&height=700" 
-										target="_blank" class="button">VIEW PROJECT </a></li>
-											
-							
-									</ul>
-								
-							</section>
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: var(--pastel-pink);
+            top: 50vh;
+            right: -100px;
+            animation-delay: 0s;
+            opacity: 0.3;
+        }
 
-							<!--SQL -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>SQL Project</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Data Cleaning </h3>
-										<p>Duplicates were removed using rank, First names and last name  were concat and change to upper case in database.
-										 Null values and strings were changed. Trim function was use to remove leading and trailing space.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Explorate & Analyze</h3>
-										<p>Aggregation functions such as sum, count, max & average were use for analysis. 
-											Ranks was used to compare and differenciate results. 
-											Joins were used to access data across tables. Tableau Public was used to display results of choosen queries.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Key Findings</h3>
-										<p>SQL queries were used to display results visually through Tableau Public. 
-										 Most sales came fron US bewtween time period of 2007-2011 with Rock and Latin having the best selling genre. 
-										 A few countries tend to do above average in sales. 
-											
-											  </p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://github.com/omwattiemotee/SQL-Project" target="_blank" class="button">VIEW PROJECT</a></li>
-									</ul>
-								</footer>
-							</section>
-                          
-							<!--Python-->
-							<section id="third" class="main special">
-								<header class="major">
-									<h2>Python Project</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Data Cleaning</h3>
-										<p>Dataframe was define to have an overview of dataset. Using str() methods to clean cols.
-										 Renaming coloumns to more recognizable set of labels.
-										  Add and drop function for necessary information to create subtables from dataframe.  </p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Explorate & Analyze</h3>
-										<p>Using pandas, numpy, matplotlib and seaborn to create and explore the fish dataset. 
-											Charts and graphs were create to visualize the data. 
-											Pivot tables were created to calculate, aggregate, and summarize data fish species by country.    </p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Key Findings</h3>
-										<p> The Atlantic cod was the main target in the Northwest and Northeast of the Atlantic Ocean between 1975 & 1990. 
-											The Northern Cod population fell to 1% and forced the species into decline putting other species to the verge of declining.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://github.com/omwattiemotee/The-Atlantic-Fish/blob/main/The%20Atantic%20Fish%20Presentation..ipynb" 
-											target="_blank" class = "button">VIEW PROJECT</a></li>
-									</ul>
-								</footer>
-							</section>
-             
-							<!--Tableau-->
-							<section id="forth" class="main special">
-								<header class="major">
-									<h2>Tableau Project</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Data Cleaning </h3>
-										<p>Used Excel to clean data. Dataset was put into table formate, auto-fixed cols., duplicates were removed. 
-											Trim and Proper functions were used to remove space and capitalize wanted characters. </p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Explorate & Analyze</h3>
-										<p>Calculated fields were created to find the Attrition rate, how many people left the company, 
-											 and how any still working with the company. 
-										Dual axis was created for Attrition by gender.  </p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Key Findings</h3>
-										<p>There's a 16.12% attrition rate with male having the higest attrition by gender. 
-											R&D having a 56.12% of attrition compare to HR with a 5.06% in dept. 
-											By Education, Life Sciences have a high count of attrition. </p> 
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/omwattie.motee/viz/TableauProj__16829070386180/TabProj_?publish=yes" 
-											target="_blank" class="button">VIEW PROJECT</a></li>
-									</ul>
-								</footer>
-							</section>
+        .orb-2 {
+            width: 300px;
+            height: 300px;
+            background: var(--pastel-blue);
+            top: 70vh;
+            left: -50px;
+            animation-delay: -5s;
+            opacity: 0.25;
+        }
 
-						
+        .orb-3 {
+            width: 350px;
+            height: 350px;
+            background: var(--pastel-mint);
+            top: 40vh;
+            right: 10%;
+            animation-delay: -10s;
+            opacity: 0.25;
+        }
 
-						
-					
+        .orb-4 {
+            width: 250px;
+            height: 250px;
+            background: var(--pastel-lavender);
+            top: 60vh;
+            left: 30%;
+            animation-delay: -15s;
+            opacity: 0.3;
+        }
 
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(30px, -30px) scale(1.05); }
+            50% { transform: translate(-20px, 20px) scale(0.95); }
+            75% { transform: translate(20px, 30px) scale(1.02); }
+        }
 
-					</div>
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 50px;
+            padding: 16px 9px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
 
-				<!-- Footer -->
-				<section id="Info" class=" main special">
-					<header class="major">
-					<!-- <h2>Info.</h2> -->
-				   <h2>Info.</h2> 
-			  
-			   <!-- <dl class="alt"> -->
-				   <dt>Location</dt>
-				   <dd>Bronx, NY 10472.</dd>
-				   <dt>Phone</dt>
-				   <dd>(917) 690-7480</dd>
-				   <dt>Email</dt>
-				   <dd><a href="#">omwattie.motee@gmail.com</a></dd>
+        nav.scrolled {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+        }
 
-					
+        nav:hover {
+            box-shadow: var(--shadow-hover);
+        }
 
-			</div>
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        nav a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
 
-	</body>
+        nav.scrolled a {
+            color: var(--text-light);
+        }
+
+        nav a:hover, nav a.active {
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        nav.scrolled a:hover, nav.scrolled a.active {
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-blue));
+        }
+
+        /* Hero Section with Vibrant Background */
+        .hero-wrapper {
+            position: relative;
+            background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-mid) 50%, var(--hero-gradient-end) 100%);
+            min-height: 70vh;
+            overflow: visible;
+        }
+
+        .hero-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 24px 180px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+            animation: fadeInUp 0.8s ease-out;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-content h1 .first-name {
+            font-family: "Charm", cursive;
+            font-weight: 700;
+            font-size: 4rem;
+        }
+
+        .hero-content h1 .last-name {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 24px;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .typing-container {
+            height: 32px;
+            margin-bottom: 32px;
+        }
+
+        .typing-text {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .typing-text::after {
+            content: '|';
+            animation: blink 1s infinite;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Wave SVG */
+        .hero-wave {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            z-index: 1;
+        }
+
+        .hero-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 2px);
+            margin-left: -1px;
+            height: 120px;
+        }
+
+        .hero-wave .shape-fill {
+            fill: #fef9f9;
+        }
+
+        /* Profile Photo - Positioned on the wave */
+        .profile-photo-wrapper {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
+            padding: 5px;
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+            transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+            will-change: transform;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background: white;
+            border: 4px solid white;
+        }
+
+        @keyframes profileFloat {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-8px); }
+        }
+
+        .profile-photo-wrapper {
+            animation: profileFloat 4s ease-in-out infinite;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+        }
+
+        .fancy-text {
+            font-family: "Charm", cursive;
+            font-weight: 700;
+            font-size: 1.15em;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section - Extra top padding to account for profile photo */
+        #about {
+            padding-top: 160px;
+        }
+
+        .about-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 48px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-soft);
+            max-width: 800px;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .about-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-radius: 28px;
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 
+                0 4px 24px rgba(0, 0, 0, 0.04),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Gradient blob decoration */
+        .project-card::before {
+            content: '';
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: var(--blob-gradient);
+            filter: blur(40px);
+            opacity: 0.6;
+            top: var(--blob-top, -40px);
+            right: var(--blob-right, -40px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 0;
+        }
+
+        /* Secondary blob */
+        .project-card::after {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--blob-secondary);
+            filter: blur(50px);
+            opacity: 0.4;
+            bottom: var(--blob-bottom, -30px);
+            left: var(--blob-left, -30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 0;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.08),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+        }
+
+        .project-card:hover::before {
+            transform: scale(1.3) translate(10px, 10px);
+            opacity: 0.8;
+        }
+
+        .project-card:hover::after {
+            transform: scale(1.4) translate(-10px, -10px);
+            opacity: 0.6;
+        }
+
+        .project-card:nth-child(1) { 
+            --card-accent: #d1fae5;
+            --blob-gradient: linear-gradient(135deg, #6ee7b7, #34d399);
+            --blob-secondary: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+            --blob-top: -50px;
+            --blob-right: -50px;
+        }
+        .project-card:nth-child(2) { 
+            --card-accent: #dbeafe;
+            --blob-gradient: linear-gradient(135deg, #93c5fd, #60a5fa);
+            --blob-secondary: linear-gradient(135deg, #bfdbfe, #93c5fd);
+            --blob-top: -40px;
+            --blob-right: -60px;
+        }
+        .project-card:nth-child(3) { 
+            --card-accent: #ede9fe;
+            --blob-gradient: linear-gradient(135deg, #c4b5fd, #a78bfa);
+            --blob-secondary: linear-gradient(135deg, #ddd6fe, #c4b5fd);
+            --blob-top: -60px;
+            --blob-right: -40px;
+        }
+        .project-card:nth-child(4) { 
+            --card-accent: #ffedd5;
+            --blob-gradient: linear-gradient(135deg, #fdba74, #fb923c);
+            --blob-secondary: linear-gradient(135deg, #fed7aa, #fdba74);
+            --blob-top: -45px;
+            --blob-right: -55px;
+        }
+
+        .project-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 4px 12px rgba(0, 0, 0, 0.06),
+                inset 0 -2px 4px rgba(0, 0, 0, 0.02),
+                inset 0 2px 4px rgba(255, 255, 255, 0.8);
+        }
+
+        .project-card:hover .project-icon {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 
+                0 8px 20px rgba(0, 0, 0, 0.1),
+                inset 0 -2px 4px rgba(0, 0, 0, 0.02),
+                inset 0 2px 4px rgba(255, 255, 255, 0.8);
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover h3 {
+            transform: translateX(4px);
+        }
+
+        .project-card .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover .skill-tag {
+            background: var(--card-accent);
+            transform: translateY(-2px);
+        }
+
+        .project-card p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .project-card .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            margin-top: auto;
+            align-self: flex-start;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .project-card .btn:hover {
+            background: var(--text-dark);
+            color: white;
+            transform: translateX(4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .project-card .btn i {
+            transition: transform 0.3s ease;
+            font-size: 0.75rem;
+        }
+
+        .project-card .btn:hover i {
+            transform: translateX(4px);
+        }
+
+        /* Info Section */
+        .info-section {
+            padding: 80px 0 120px;
+        }
+
+        .info-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 48px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-soft);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .info-card h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 32px;
+        }
+
+        .info-items {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 24px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateX(8px);
+        }
+
+        .info-item i {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .info-item .info-content {
+            text-align: left;
+        }
+
+        .info-item .label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .info-item .value {
+            font-size: 1rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .info-item a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-item a:hover {
+            color: var(--hero-gradient-start);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .footer-links a {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Scroll reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 10px 16px;
+            }
+
+            nav ul {
+                gap: 4px;
+            }
+
+            nav a {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content h1 .first-name {
+                font-size: 3rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-content {
+                padding: 100px 24px 160px;
+            }
+
+            .hero-wave svg {
+                height: 80px;
+            }
+
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            .profile-photo-wrapper {
+                bottom: -20px;
+            }
+
+            #about {
+                padding-top: 120px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                padding: 0 16px;
+                gap: 20px;
+            }
+
+            .project-card {
+                aspect-ratio: auto;
+                min-height: auto;
+                padding: 24px;
+            }
+
+            .project-card::before {
+                width: 140px;
+                height: 140px;
+            }
+
+            .project-card::after {
+                width: 100px;
+                height: 100px;
+            }
+
+            .about-card, .info-card {
+                padding: 32px 24px;
+                margin: 0 16px;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#info">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Vibrant Background -->
+    <div class="hero-wrapper">
+        <div class="hero-content">
+            <h1><span class="first-name">Omwattie</span> <span class="last-name">Motee</span></h1>
+            <p class="subtitle">Data Analyst skilled in Excel, SQL, Python, & Tableau.</p>
+            <div class="typing-container">
+                <span class="typing-text" id="typing"></span>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/omwattiemotee" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/omwattiemotee/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:omwattie.motee@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Wavy Bottom Edge -->
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C288,120 432,0 720,64 C1008,128 1152,8 1440,64 L1440,120 L0,120 Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <!-- Profile Photo on the Wave -->
+        <div class="profile-photo-wrapper">
+            <div class="profile-photo">
+                <img src="images/omwattie.png" alt="Omwattie Motee">
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content with Gradient -->
+    <div class="page-content">
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>About <span class="fancy-text">Me</span></h2>
+            </div>
+            <div class="about-card reveal">
+                <p>My name is Omwattie Motee, and I'm a data analyst with a passion for making a meaningful impact through complex data analysis. After a background in Education, I made a career change in 2022 to pursue my love for working with data.</p>
+                <br>
+                <p>I have successfully completed over 10 personal projects, gaining valuable insights and sharpening my technical skills in Excel, SQL, Python & Tableau. I strongly believe that data analysis can play a crucial role in improving processes, optimizing decision-making, and positively impacting organizations and communities.</p>
+                <br>
+                <p>I am open to collaboration and eager to connect with like-minded professionals who share a passion for data analysis and its transformative power. If you have any feedback, questions, or potential opportunities, I would be delighted to hear from you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>My Projects</h2>
+                <p>A collection of data analysis projects showcasing my skills</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Excel Project -->
+                <div class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3>Excel Project</h3>
+                    <div class="skills">
+                        <span class="skill-tag">SUMIFS</span>
+                        <span class="skill-tag">XLOOKUP</span>
+                        <span class="skill-tag">Pivot Tables</span>
+                    </div>
+                    <p>Cleaned dataset by removing duplicates, fixing date formats, and using TRIM functions. Created pivot tables to calculate YoY variance. Found Q2 growth slowed to 2.7% from Q1's 4%, with LATAM client losses driving regional changes.</p>
+                    <a href="https://onedrive.live.com/embed?resid=5010E19F79FF1A4E%211153&authkey=%21AN76EL49NYkZFLM&em=2" target="_blank" class="btn">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SQL Project -->
+                <div class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL Project</h3>
+                    <div class="skills">
+                        <span class="skill-tag">Joins</span>
+                        <span class="skill-tag">Aggregations</span>
+                        <span class="skill-tag">Rank</span>
+                    </div>
+                    <p>Used aggregation functions and joins to analyze sales data. Visualized results through Tableau Public. Discovered US led sales (2007-2011) with Rock and Latin as top genres, and several countries performing above average.</p>
+                    <a href="https://github.com/omwattiemotee/SQL-Project" target="_blank" class="btn">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Python Project -->
+                <div class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Project</h3>
+                    <div class="skills">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                    </div>
+                    <p>Explored Atlantic fish dataset using pandas and visualization libraries. Analysis revealed Atlantic cod was heavily targeted (1975-1990), causing population to fall to 1%, pushing the species and others toward decline.</p>
+                    <a href="https://github.com/omwattiemotee/The-Atlantic-Fish/blob/main/The%20Atantic%20Fish%20Presentation..ipynb" target="_blank" class="btn">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Tableau Project -->
+                <div class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Tableau Project</h3>
+                    <div class="skills">
+                        <span class="skill-tag">Dashboards</span>
+                        <span class="skill-tag">Calculated Fields</span>
+                        <span class="skill-tag">Dual Axis</span>
+                    </div>
+                    <p>Built HR analytics dashboard to analyze employee attrition. Found 16.12% attrition rate with males having highest gender attrition. R&D showed 56.12% of attrition vs HR's 5.06%, with Life Sciences leading by education.</p>
+                    <a href="https://public.tableau.com/app/profile/omwattie.motee/viz/TableauProj__16829070386180/TabProj_" target="_blank" class="btn">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="info-section">
+        <div class="container">
+            <div class="info-card reveal">
+                <h2>Get In Touch</h2>
+                <div class="info-items">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-content">
+                            <div class="label">Location</div>
+                            <div class="value">Bronx, NY</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <div class="label">Email</div>
+                            <div class="value"><a href="mailto:omwattie.motee@gmail.com">omwattie.motee@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/omwattiemotee" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/omwattiemotee/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div><!-- End page-content -->
+
+    <script>
+        // Profile Photo Bulge on Scroll
+        const profilePhoto = document.querySelector('.profile-photo');
+        const heroWrapper = document.querySelector('.hero-wrapper');
+        
+        function handleProfileScale() {
+            const scrollY = window.scrollY;
+            const heroHeight = heroWrapper.offsetHeight;
+            
+            // Calculate scale based on scroll position (bulge as you scroll into view)
+            // Max bulge around when the photo is centered in viewport
+            const scrollProgress = Math.min(scrollY / (heroHeight * 0.8), 1);
+            
+            // Create a bulge effect: starts at 1, grows to 1.15, then back to 1
+            const bulge = 1 + (Math.sin(scrollProgress * Math.PI) * 0.12);
+            
+            // Also slightly increase shadow when bulging
+            const shadowIntensity = 0.4 + (Math.sin(scrollProgress * Math.PI) * 0.2);
+            
+            profilePhoto.style.transform = `scale(${bulge})`;
+            profilePhoto.style.boxShadow = `0 ${12 + scrollProgress * 8}px ${40 + scrollProgress * 20}px rgba(102, 126, 234, ${shadowIntensity})`;
+        }
+        
+        window.addEventListener('scroll', handleProfileScale);
+        handleProfileScale(); // Initial call
+
+        // Typing Animation
+        const typingText = "Welcome to my portfolio";
+        let charIndex = 0;
+        const typingElement = document.getElementById('typing');
+
+        function type() {
+            if (charIndex < typingText.length) {
+                typingElement.textContent += typingText.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 80);
+            }
+        }
+
+        // Start typing after a delay
+        setTimeout(type, 1000);
+
+        // Scroll Reveal Animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Initial check
+
+        // Nav background change on scroll
+        const nav = document.getElementById('main-nav');
+        
+        function updateNav() {
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        }
+
+        window.addEventListener('scroll', updateNav);
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a');
+
+        function activateNavLink() {
+            let scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 200;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', activateNavLink);
+
+        // Smooth scroll for nav links
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
 </html>
